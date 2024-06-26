@@ -1,0 +1,17 @@
+To run this script with the specified AI models, you'll need a system with fairly substantial computational resources. Here's a breakdown of the minimum requirements:
+
+1. CPU: A modern multi-core processor. At least a 4-core CPU is recommended, but more cores will significantly improve performance.
+
+2. RAM: The memory requirements are quite high due to the large language models being used. You'll need at least 16GB of RAM, but 32GB or more is strongly recommended, especially for the 70B parameter models.
+
+3. Storage: SSD storage of at least 100GB free space. The models themselves can take up a significant amount of space (tens of gigabytes each).
+
+4. GPU: While not strictly necessary, a GPU with at least 8GB of VRAM (like an NVIDIA RTX 3070 or better) can dramatically speed up inference. For the 70B models, you might need a GPU with 24GB+ VRAM or multi-GPU setup for optimal performance.
+
+5. Operating System: A Linux distribution is often preferred for running these kinds of models, but Windows or macOS can also work with the right setup.
+
+6. Internet Connection: A stable internet connection is needed to pull the models initially.
+
+It's worth noting that the "llama3:70b-instruct" model used for the Orchestrator and Refiner is particularly resource-intensive. If your system doesn't meet these requirements, you might consider using smaller models (like the 7B or 13B versions) by modifying the `ORCHESTRATOR_MODEL` and `REFINER_MODEL` variables in the script. This would reduce the resource requirements but might also affect the quality of the outputs.
+
+Remember, these are approximate minimum requirements. For smooth operation and faster processing, more powerful hardware would be beneficial.
